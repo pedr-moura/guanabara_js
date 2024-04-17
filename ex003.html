@@ -29,6 +29,11 @@ Para funcionar corretamente, é usado o <span>Number()</span> para conversão do
 
 <br><br><br>
 O mesmo vale para Strings com: <span>String()</span> ou n.<span>toString()</span>
+
+<br><br><br><br>
+<b>template de strings:</b>
+
+<p>Como usar " " com variáveis dentro, semelhante ao PHP usando $ mas no formato de <span>`${<b>Variavel aqui</b>}`</span></p>
     
     <script>
 
@@ -36,7 +41,7 @@ var n1 = Number.parseInt(window.prompt('Digite o primeiro numero: '))
 var n2 = Number.parseInt(window.prompt('Digite o outro numero: '))
 var soma = n1 + n2
 
-window.alert('A soma dos valores é ' + String(soma) )
+window.alert(`A soma de ${n1} e ${n2} é igual a ` + String(soma) )
     </script>
 
 </body>
