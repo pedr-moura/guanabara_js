@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+                body{
+            background-color: rgb(1, 150, 100);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        span{
+            color: aqua;
+        }
+        #soma{
+            background: green;
+            color: white;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0%);
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Somando valores</h1>
+<input type="number" name="" id="txtn1"> +
+<input type="number" name="" id="txtn2">
+<input type="button" value="=" onclick="somar()">
+
+<br><br>
+
+
+
+
+
+<div id="soma">
+    ...
+</div>
+
+<pre>
+    <span>var</span> tn1 = document.getElementById('txtn1')
+    <span>var</span> tn2 = document.getElementById('txtn2')
+    <span>var</span> n1 = Number(tn1.value)
+    <span>var</span> n2 = Number(tn2.value)
+
+    <span>var</span> soma = document.getElementById('soma')
+    <span>var</span> res = n1 + n2
+    soma.innerHTML = res
+</pre>
+
+<script>
+function somar(){
+    var tn1 = document.getElementById('txtn1')
+    var tn2 = document.getElementById('txtn2')
+    var n1 = Number(tn1.value)
+    var n2 = Number(tn2.value)
+
+    var soma = document.getElementById('soma')
+    var res = n1 + n2
+    soma.innerHTML = `A soma entre ${n1} e ${n2} é igual a <b>${res}</b>`
+
+}
+</script>
+</body>
+</html>
