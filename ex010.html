@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <style>
+    body{
+            background-color: rgb(1, 150, 100);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        span{
+            color: aqua;
+        }
+        #res{
+            background: green;
+            color: white;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0%);
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multas</h1>
+
+    Velocidade do carro <input type="number" name="" id="txtvel"> Km/h
+<br><br>
+    <input type="button" value="Verificar" onclick="calcular()">
+
+<br><br><br>
+    <div id="res"></div>
+    <script>
+
+        function calcular(){
+            var txtvel = document.getElementById('txtvel')
+            var v = Number(txtvel.value)
+            
+            var res = document.getElementById('res')
+            var multa = ''
+
+            if(v > 50){
+                multa = 'foi multado'
+            }else{
+                multa = 'não foi multado'
+            }
+
+
+            res.innerHTML = `Sua velocidade é de <b> ${v}Km/h</b>, e você <b>${multa}</b>`
+
+            res.innerHTML += `<br> Dirija sempre com cuidado.`
+        }
+    </script>
+</body>
+</html>
