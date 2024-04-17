@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+                body{
+            background-color: rgb(1, 150, 100);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        span{
+            color: aqua;
+        }
+        #area{
+            background: green;
+            color: white;
+            width: 200px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0%);
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula 10</h1>
+
+<p>interações com DOM</p>
+
+    exemplo: <br>
+    <br><b>eventos com Mouse</b>
+<br>
+    <li>Mouse dentro da div: <span>mouseenter</span></li>
+    <li>Mouse movendo na div: <span>mousemove</span></li>
+    <li>Mouse clica e segura na div: <span>mousedown</span></li>
+    <li>Mouse solta o click na div: <span>mouseup</span></li>
+    <li>Mouse clicka na div: <span>click</span></li>
+    <li>Mouse sai da div: <span>mouseout</span></li>
+<br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/Events">Link com as referencias para uso de eventos</a>
+<br><br>
+<div id="area">
+    Interaja
+</div>
+
+
+<script>
+    var area = window.document.getElementById('area')
+    area.addEventListener('click', clicar)
+    area.addEventListener('mouseenter', entrar)
+    area.addEventListener('mouseout', sair)
+
+    function clicar(){
+        area.innerText = 'Clicou'
+        area.style.background = 'yellow'
+        area.style.color = 'black'
+    }
+    function entrar(){
+        area.innerText = 'Entrou'
+        area.style.background = 'blue'
+        area.style.color = 'white'
+    }
+    function sair(){
+        area.innerText = 'Saiu'
+        area.style.background = 'grey'
+        area.style.color = 'white'
+    }
+</script>
+</body>
+</html>
