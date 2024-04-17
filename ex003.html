@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <style>
+        body{
+            background-color: rgb(1, 150, 100);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        span{
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>inicio do curso <span>JS</span></p>
+
+tratamento de dois numeros com variaveis
+<br><br>
+window.prompt -> recebe os valores como string por padrão
+<br>
+Para funcionar corretamente, é usado o <span>Number()</span> para conversão do input <br> [pode até ser <span>Number.parse</span>Int ou Float ]
+
+<br><br><br>
+O mesmo vale para Strings com: <span>String()</span> ou n.<span>toString()</span>
+    
+    <script>
+
+var n1 = Number.parseInt(window.prompt('Digite o primeiro numero: '))
+var n2 = Number.parseInt(window.prompt('Digite o outro numero: '))
+var soma = n1 + n2
+
+window.alert('A soma dos valores é ' + String(soma) )
+    </script>
+
+</body>
+</html>
