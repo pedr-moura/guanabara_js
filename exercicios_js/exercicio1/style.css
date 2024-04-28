@@ -1,0 +1,28 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h2{
+    color: white;
+}
+.box{
+    background: white;
+    color: black;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+img{
+    margin-top: 20px;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 100px;
+}
